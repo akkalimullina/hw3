@@ -1,0 +1,96 @@
+
+
+.neomorf1 {
+    color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  margin-top: 10vw;
+}
+
+.neomorf1:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+
+.neomorf2 {
+    background-color: #e0e0e0;
+    border-radius: 50px;
+    box-shadow: inset 4px 4px 10px #bcbcbc, inset -4px -4px 10px #ffffff;
+    color: #4d4d4d;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 15px 40px;
+    transition: all 0.2s ease-in-out;
+    border: 2px solid rgb(206, 206, 206);
+    margin-top: 2vw;
+  }
+  
+  .neomorf2:hover {
+    box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+  }
+  
+  .neu-button:focus {
+    outline: none;
+    box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+  }
+
+
+  .glassmorf {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #333;
+    background: rgba(255, 255, 255, 0.1); /* Прозрачный белый фон */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Белая граница */
+    border-radius: 10px;
+    cursor: pointer;
+    backdrop-filter: blur(10px); /* Размытие заднего фона */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden; /* Для эффекта наведения */
+}
+
+
+
+.scevromorf {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #333;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca); /* Градиент для объема */
+    border: none;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px #bababa, -4px -4px 8px #ffffff; /* Тени для объема */
+    cursor: pointer;
+    transition: all 0.2s ease;
+    outline: none; /* Убираем дефолтное выделение */
+}
+
+.scevromorf:hover {
+    box-shadow: 2px 2px 4px #bababa, -2px -2px 4px #ffffff; /* Меняем тени при наведении */
+    transform: translateY(1px); /* Слегка нажимаем кнопку */
+}
+
+.scevromorf:active {
+    box-shadow: inset 2px 2px 4px #bababa, inset -2px -2px 4px #ffffff; /* Эффект нажатия */
+    transform: translateY(2px);
+}
+
+.scevromorf::before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    border-radius: 7px;
+    box-shadow: inset 1px 1px 2px rgba(0,0,0,0.1); /* Создаём внутреннюю тень */
+    pointer-events: none; /* Позволяет кликать через него */
+}
